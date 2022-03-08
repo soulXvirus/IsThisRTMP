@@ -4,6 +4,7 @@
     "node",
     "FFmpeg"
   ],
+  "stack": "container",
   "env": {
     "KEYRTMP": {
       "description": "RTMP server url with key",
