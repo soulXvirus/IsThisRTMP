@@ -5,9 +5,8 @@ WORKDIR /app
 COPY package.json .
 
 RUN npm install
-RUN apk update
-RUN apk add
-RUN apk add ffmpeg
+RUN apt update && apt upgrade -y
+RUN apt install ffmpeg -y
 
 COPY . .
 
